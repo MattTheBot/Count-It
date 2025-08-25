@@ -1,3 +1,4 @@
+/* General page styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,89 +6,62 @@ body {
   color: #eee;
 }
 
+/* Header bar */
 .topbar {
-  background: #1f1f1f;
-  color: #fff;
-  padding: 12px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #333;
+  background-color: #1f1f1f;
+  padding: 12px 20px;
+  border-bottom: 1px solid #333;
+}
+
+.topbar .center span {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .nav-btn {
-  background: none;
+  background-color: #2a2a2a;
+  color: #ccc;
   border: none;
-  color: #4CAF50;
+  border-radius: 12px;
+  padding: 8px 14px;
+  margin: 0 4px;
   font-size: 16px;
-  cursor: pointer;
-}
-
-.nav-btn:hover {
-  text-decoration: underline;
-}
-
-/* Cards (homepage counters) */
-.counter-card {
-  background: #1c1c1c;
-  border: 1px solid #333;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 15px;
   cursor: pointer;
   transition: background 0.2s;
 }
-.counter-card:hover {
-  background: #2a2a2a;
+.nav-btn:hover {
+  background-color: #3a3a3a;
 }
 
-/* Counter page */
-.big-rect {
-  width: 90%;
-  margin: 20px auto;
-  height: 200px;
-  background: #1c1c1c;
-  border: 1px solid #333;
-  border-radius: 12px;
+/* Homepage counters area */
+.home-container {
+  padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.counter-card, .add-counter {
+  background-color: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 16px;
+  width: 150px;
+  height: 150px;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 36px;
-}
-.small-rects {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-.small-rect {
-  flex: 1;
-  max-width: 200px;
-  background: #1c1c1c;
-  border: 1px solid #333;
-  border-radius: 10px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.small-rect input {
-  padding: 8px;
-  border-radius: 6px;
-  border: none;
-  font-size: 16px;
-}
-.small-rect button {
-  padding: 10px;
-  border-radius: 6px;
-  border: none;
-  font-size: 16px;
   cursor: pointer;
-  color: white;
+  transition: background 0.2s;
 }
-.small-rect.add button {
-  background: #4CAF50;
+.counter-card:hover, .add-counter:hover {
+  background-color: #2a2a2a;
 }
-.small-rect.subtract button {
-  background: #E53935;
+.add-counter {
+  font-size: 48px;
+  color: #ccc;
+  font-weight: bold;
 }
