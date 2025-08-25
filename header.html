@@ -1,27 +1,12 @@
-<!-- header.html -->
-<div class="top-bar">
-    <button class="menu-button" onclick="toggleMenu()">
-        <span></span><span></span><span></span>
-    </button>
-    <div class="title">JVT</div>
-    <div class="right-buttons">
-        <a href="#" class="social-button" title="YouTube"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="social-button" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-button" title="X"><i class="fab fa-x-twitter"></i></a>
-        <a href="help.html" class="contact-button">Help</a>
-    </div>
+<div class="topbar">
+  <div class="left">
+    <button class="nav-btn" onclick="goHome()">🏠</button>
+    <button class="nav-btn" onclick="goBack()">←</button>
+  </div>
+  <div class="center">
+    <span>Count It</span>
+  </div>
+  <div class="right">
+    <button class="nav-btn" onclick="goHelp()">❓</button>
+  </div>
 </div>
-
-<div class="dropdown" id="dropdownMenu">
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="members.html">Members / Staff</a>
-    <a href="about.html">About</a>
-    <a href="help.html">Help Request</a>
-</div>
-
-<script>
-function toggleMenu() {
-    document.getElementById("dropdownMenu").classList.toggle("show");
-}
-</script>
