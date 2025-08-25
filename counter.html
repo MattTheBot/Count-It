@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Counter</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <div id="header"></div>
+
+  <div class="big-rect" id="counterDisplay">0</div>
+  <div class="small-rects">
+    <div class="small-rect add">
+      <input type="number" id="addAmount" placeholder="Enter amount">
+      <button onclick="addAmount()">Add</button>
+    </div>
+    <div class="small-rect subtract">
+      <input type="number" id="subtractAmount" placeholder="Enter amount">
+      <button onclick="subtractAmount()">Subtract</button>
+    </div>
+  </div>
+</body>
+</html>
