@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #eee;
+}
+
+.topbar {
+  background: #1f1f1f;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #333;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #4CAF50;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  text-decoration: underline;
+}
+
+/* Cards (homepage counters) */
+.counter-card {
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.counter-card:hover {
+  background: #2a2a2a;
+}
+
+/* Counter page */
+.big-rect {
+  width: 90%;
+  margin: 20px auto;
+  height: 200px;
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+}
+.small-rects {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.small-rect {
+  flex: 1;
+  max-width: 200px;
+  background: #1c1c1c;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.small-rect input {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+.small-rect button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+.small-rect.add button {
+  background: #4CAF50;
+}
+.small-rect.subtract button {
+  background: #E53935;
+}
