@@ -2,15 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Count It</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JVT - Home</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/a2e0fc3719.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <!-- Load header -->
   <div id="header"></div>
-
-  <h2 style="padding:20px;">Your Counters</h2>
-  <div class="counter-card" onclick="openCounter('counter1')">My First Counter</div>
+  <main>
+    <h1>Welcome to JVT</h1>
+    <p>This is the homepage of our project site.</p>
+  </main>
+  <script>
+    fetch("header.html")
+      .then(response => response.text())
+      .then(data => document.getElementById("header").innerHTML = data);
+  </script>
 </body>
 </html>
