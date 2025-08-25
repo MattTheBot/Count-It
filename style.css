@@ -1,67 +1,48 @@
-/* General page styling */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #eee;
+/* Header bar and nav-btn same as before */
+.nav-btn i {
+  font-size: 18px;
 }
 
-/* Header bar */
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1f1f1f;
-  padding: 12px 20px;
-  border-bottom: 1px solid #333;
-}
-
-.topbar .center span {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.nav-btn {
-  background-color: #2a2a2a;
-  color: #ccc;
-  border: none;
-  border-radius: 12px;
-  padding: 8px 14px;
-  margin: 0 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.nav-btn:hover {
-  background-color: #3a3a3a;
-}
-
-/* Homepage counters area */
+/* Homepage grid for counters */
 .home-container {
   padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
 }
 
+/* Counter and Add button squares */
 .counter-card, .add-counter {
   background-color: #1c1c1c;
   border: 1px solid #333;
   border-radius: 16px;
-  width: 150px;
-  height: 150px;
+  width: 100%;
+  aspect-ratio: 1; /* make squares */
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 36px;
   cursor: pointer;
   transition: background 0.2s;
+  text-align: center;
+  padding: 10px;
 }
+
 .counter-card:hover, .add-counter:hover {
   background-color: #2a2a2a;
 }
+
 .add-counter {
-  font-size: 48px;
+  font-size: 32px;
   color: #ccc;
   font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.add-counter span {
+  font-size: 16px;
+  margin-top: 5px;
+  color: #aaa;
 }
