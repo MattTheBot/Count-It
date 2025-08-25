@@ -1,4 +1,4 @@
-// Load header into every page
+// Load header
 fetch("header.html")
   .then(res => res.text())
   .then(data => {
@@ -6,14 +6,11 @@ fetch("header.html")
   });
 
 // Navigation
-function goHome() {
-  window.location.href = "index.html";
-}
-function goBack() {
-  window.history.back();
-}
+function goHome() { window.location.href = "index.html"; }
+function goBack() { window.history.back(); }
+function goHelp() { window.location.href = "help.html"; }
 
-// Counter logic with localStorage
+// Counter logic
 let counterValue = parseInt(localStorage.getItem("counterValue")) || 0;
 
 function updateDisplay() {
@@ -42,3 +39,14 @@ function subtractAmount() {
 }
 
 document.addEventListener("DOMContentLoaded", updateDisplay);
+
+// Homepage: create new counter
+function createCounter() {
+  // Generate a unique id for new counter
+  const id = "counter_" + Date.now();
+  // Save counter in localStorage
+  localStorage.setItem(id, 0);
+
+  // Redirect to counter page (for now using counter.html as template)
+  window.location.href = "counter.html";
+}
